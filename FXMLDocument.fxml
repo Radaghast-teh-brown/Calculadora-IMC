@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="338.0" prefWidth="229.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="praticando2.FXMLDocumentController">
+    <children>
+      <Button fx:id="limpar" layoutX="103.0" layoutY="164.0" mnemonicParsing="false" onAction="#limparCampo" prefHeight="30.0" prefWidth="82.0" text="Limpar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="17.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calculadora de IMC">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="14.0" layoutY="164.0" mnemonicParsing="false" onAction="#calcularIMC" prefHeight="30.0" prefWidth="82.0" text="Calcular">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="19.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Massa (kg)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="17.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Altura (m)">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="massa" layoutX="14.0" layoutY="76.0" />
+      <TextField fx:id="altura" layoutX="14.0" layoutY="130.0" />
+      <Text layoutX="20.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMC" wrappingWidth="55.185546875">
+         <font>
+            <Font name="Bell MT Bold" size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="label" layoutX="22.0" layoutY="243.0" prefHeight="27.0" prefWidth="66.0" textFill="#0f40ab">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="19.0" layoutY="283.0" mnemonicParsing="false" text="Avaliação" />
+    </children>
+</AnchorPane>
