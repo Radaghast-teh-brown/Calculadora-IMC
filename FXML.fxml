@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane id="AnchorPane" prefHeight="415.0" prefWidth="260.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="praticando2.FXMLController">
+   <children>
+      <Label layoutX="55.0" layoutY="10.0" text="Avaliação sobre o IMC">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="115.0" layoutY="36.0" startX="-100.0" />
+      <Button layoutX="101.0" layoutY="378.0" mnemonicParsing="false" onAction="#voltar" text="Voltar" />
+      <TextFlow layoutX="18.0" layoutY="63.0" />
+      <GridPane layoutX="25.0" layoutY="155.0" prefHeight="207.0" prefWidth="219.0">
+        <columnConstraints>
+          <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="104.0" minWidth="-Infinity" prefWidth="78.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="141.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="IMC" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="98.0" text="Classificação" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="&lt; 18.5" GridPane.rowIndex="1" />
+            <Label text="Abaixo do peso normal" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label prefHeight="17.0" prefWidth="65.0" text="18.5 - 24.9" GridPane.rowIndex="2" />
+            <Label text="Peso Normal" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="25.0 - 29.9" GridPane.rowIndex="3" />
+            <Label text="Excesso de Peso" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="30.0 - 34.9" GridPane.rowIndex="4" />
+            <Label text="Obesidade Classe I" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="35.0 - 39.9" GridPane.rowIndex="5" />
+            <Label minWidth="-Infinity" text="Obesidade Classe II" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="&gt;= 40.0" GridPane.rowIndex="6" />
+            <Label prefHeight="17.0" prefWidth="123.0" text="Obesidade Classe III" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+      <Label fx:id="texto" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="22.0" layoutY="45.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="115.0" prefWidth="219.0" text="O IMC é reconhecido como padrão internacional para avaliar o grau de sobrepeso e obesidade. É calculado dividindo o peso (em kg) pela altura ao quadrado (em metros). IMC = Peso ÷ (Altura × Altura)." textAlignment="JUSTIFY" wrapText="true" />
+   </children>
+</AnchorPane>
